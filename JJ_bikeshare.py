@@ -184,6 +184,13 @@ def trip_duration_stats(df):
     minutes_2 = modified_2 / 60
     print('\nShortest travel time is {} minutes'.format(minutes_2))
 
+    # displays the longest travel time
+    df['Longest Duration'] = df['Trip Duration'].max()
+    longest_run = df['Longest Duration'].max()
+    modified_3 = int(longest_run)
+    minutes_3 = int(modified_3 / 60)
+    print('\nLongest travel time is {} minutes'.format(minutes_3))
+
     print("\nThis took %s seconds." % round((time.time() - start_time),2))
     print('-'*40)
 
