@@ -177,6 +177,13 @@ def trip_duration_stats(df):
     minutes = modified / 60
     print('\nAverage travel time is {} minutes'.format(minutes))
 
+    # displays the shortest travel time
+    df['Shortest Duration'] = df['Trip Duration'].min()
+    shortest_run = df['Shortest Duration'].min()
+    modified_2 = int(shortest_run)
+    minutes_2 = modified_2 / 60
+    print('\nShortest travel time is {} minutes'.format(minutes_2))
+
     print("\nThis took %s seconds." % round((time.time() - start_time),2))
     print('-'*40)
 
