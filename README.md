@@ -11,6 +11,8 @@ Python script that receives user input to process bikeshare data from Washington
 According to the user input, the data will be processed and specific information provided to the user such as
 renter demographics and rental locations.
 
+This script will be an educational workspace that will serve as a tool to hone programming skills as they improve.
+
 ### Files used
 JJ_bikeshare.py
 chicago.csv
