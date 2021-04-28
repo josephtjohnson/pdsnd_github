@@ -1,3 +1,13 @@
+"""
+
+This project is an educational workspace for the Programming for Data Science
+with Python Nanodegree.  It is intended to be an on-going project that will be
+improved as programming skills improve.  This script will receive user input
+and process bikeshare data from three major US cities.  Results will provide
+the user with demographic and rental information.
+
+"""
+
 import time
 import calendar
 import datetime as dt
@@ -10,6 +20,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_filters():
     """
+
     Asks user to specify a city, month, and day to analyze.
 
     Returns:
